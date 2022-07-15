@@ -30,6 +30,7 @@ exports[`Home matches snapshot 1`] = `
         "padding": 5,
       }
     }
+    testID="text"
     underlineColorAndroid="transparent"
   />
   <View
@@ -53,6 +54,7 @@ exports[`Home matches snapshot 1`] = `
         "opacity": 1,
       }
     }
+    testID="btn"
   >
     <View
       style={

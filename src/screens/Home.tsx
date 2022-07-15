@@ -15,6 +15,8 @@ const Home: FC = () => {
 	return (
 		<SafeAreaView testID="home" style={style.container}>
 			<TextInput
+
+				testID="text"
 				placeholder="Enter number of Parking Lots"
 				placeholderTextColor={"grey"}
 				keyboardType="numeric"
@@ -22,6 +24,7 @@ const Home: FC = () => {
 				style={style.input}
 			/>
 			<Button
+				testID="btn"
 				disabled={lots == 0}
 				title="Submit"
 				onPress={() => {

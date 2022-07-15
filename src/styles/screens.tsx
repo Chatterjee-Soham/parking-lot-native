@@ -56,4 +56,8 @@ export const style = StyleSheet.create({
 	snackText: {
 		color: "white",
 	},
+	lots:{
+		width:"100%",
+		backgroundColor:"green",
+	},
 });

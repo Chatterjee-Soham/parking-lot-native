@@ -28,6 +28,7 @@ describe("Lots", () => {
 	it("has component with req TestId", () => {
 		const tree = render(<Lots route={route} />);
 		expect(tree.findByTestId("lots")).toBeTruthy();
+		const handleBtn = tree.getByTestId("jjjj");
 	});
 
 	it("has 3 children", () => {

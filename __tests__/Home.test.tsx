@@ -1,11 +1,13 @@
 /** @format */
 
-import { render } from "@testing-library/react-native";
+import { fireEvent, render } from "@testing-library/react-native";
 import Home from "../src/screens/Home";
 
 jest.mock("@react-navigation/native", () => {
 	return {
-		useNavigation: jest.fn(),
+		useNavigation: () => ({
+			navigate:jest.fn()
+		}),
 	};
 });
 
@@ -28,5 +30,10 @@ describe("Home", () => {
 		const tree = render(<Home />);
 		//@ts-ignore
 		expect(tree.toJSON().children.length).toBe(2);
+		const textBox=tree.getByTestId("text");
+		const buttonBox=tree.getByTestId("btn");
+		fireEvent.changeText(textBox,{target:{value:"mystring"}});
+		fireEvent.press(buttonBox);
 	});
+
 });
