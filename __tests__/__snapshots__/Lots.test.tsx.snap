@@ -45,6 +45,7 @@ exports[`Lots matches snapshot 1`] = `
             "padding": 5,
           }
         }
+        testID="lotstext"
         underlineColorAndroid="transparent"
       />
       <View
@@ -78,6 +79,7 @@ exports[`Lots matches snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="btnlots"
         >
           <View
             style={
@@ -124,6 +126,7 @@ exports[`Lots matches snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="cancel2btn"
         >
           <View
             style={
@@ -155,6 +158,7 @@ exports[`Lots matches snapshot 1`] = `
     animationType="slide"
     hardwareAccelerated={false}
     onShow={[Function]}
+    testID="hrsmodal"
     visible={false}
   >
     <View
@@ -205,6 +209,7 @@ exports[`Lots matches snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="removebtn"
         >
           <View
             style={
@@ -246,6 +251,7 @@ exports[`Lots matches snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="cancelbtn"
         >
           <View
             style={
@@ -286,10 +292,12 @@ exports[`Lots matches snapshot 1`] = `
     style={
       Object {
         "backgroundColor": "green",
+        "color": "blue",
         "opacity": 1,
         "width": "100%",
       }
     }
+    testID="handletouch"
   >
     <RCTScrollView
       data={
@@ -357,6 +365,7 @@ exports[`Lots matches snapshot 1`] = `
                   "opacity": 1,
                 }
               }
+              testID="touchevent"
             >
               <View
                 style={
@@ -411,6 +420,7 @@ exports[`Lots matches snapshot 1`] = `
                   "opacity": 1,
                 }
               }
+              testID="touchevent"
             >
               <View
                 style={

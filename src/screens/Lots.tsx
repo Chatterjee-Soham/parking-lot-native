@@ -114,6 +114,7 @@ const Lots: FC<lotsPropsType> = (props) => {
         <View style={style.modal}>
           <Text>Add Vehicle to P{currentLot}</Text>
           <TextInput
+            testID="lotstext"
             placeholder="Enterv reg. number"
             placeholderTextColor={"grey"}
             onChangeText={(text) => {
@@ -124,6 +125,7 @@ const Lots: FC<lotsPropsType> = (props) => {
 
           <View style={style.buttonRow}>
             <Button
+            testID="btnlots"
               disabled={reg.length == 0}
               title="Add"
               onPress={() => {
@@ -145,6 +147,7 @@ const Lots: FC<lotsPropsType> = (props) => {
               }}
             />
             <Button
+              testID="cancel2btn"
               title="Cancel"
               onPress={() => {
                 setShowAddModal(false);
@@ -155,6 +158,7 @@ const Lots: FC<lotsPropsType> = (props) => {
       </Modal>
       {/* Remove Modal */}
       <Modal
+        testID="hrsmodal"
         visible={showRemoveModal}
         onShow={() => {
           calculateHrsAmt();
@@ -168,6 +172,7 @@ const Lots: FC<lotsPropsType> = (props) => {
 
           <View style={style.buttonRow}>
             <Button
+              testID="removebtn"
               title="Remove"
               onPress={() => {
                 const flag = false;
@@ -197,6 +202,7 @@ const Lots: FC<lotsPropsType> = (props) => {
               }}
             />
             <Button
+              testID="cancelbtn"
               title="Cancel"
               onPress={() => {
                 setAmnt(0);
@@ -208,13 +214,15 @@ const Lots: FC<lotsPropsType> = (props) => {
         </View>
       </Modal>
 
-      <TouchableOpacity onPress={() => handleAdd(true)} style={style.lots}>
+      <TouchableOpacity testID="handletouch" onPress={() => handleAdd(true)} style={style.lots}>
         <FlatList
+        
           data={lotsList}
           horizontal={false}
           numColumns={4}
           renderItem={({ item }) => (
             <TouchableOpacity
+              testID="touchevent"
               // style={style.layout}
               onPress={() => {
                 setCurrentLot(item.id);

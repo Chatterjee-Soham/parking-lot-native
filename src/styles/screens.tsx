@@ -23,7 +23,9 @@ export const style = StyleSheet.create({
 		marginBottom: 10,
 	},
 	parkingArea: {
-		padding: "10%",
+		padding: "100%",
+		alignContent:"center",
+
 	},
 	item: {
 		flexDirection: "row",
@@ -59,5 +61,6 @@ export const style = StyleSheet.create({
 	lots:{
 		width:"100%",
 		backgroundColor:"green",
+		color:"blue",
 	},
 });
